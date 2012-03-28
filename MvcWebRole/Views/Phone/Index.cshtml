@@ -1,0 +1,16 @@
+﻿@model List<AzureSharedLibrary.ResponseDataItem>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Phone to Azure SampleData Table (Fetch 100)</h2>
+@foreach (var p in Model)
+{
+    <div class="item">
+        <h3>@p.ProcessName - @p.DateEntered.ToString()</h3>
+    </div>
+}
+
+
+    
